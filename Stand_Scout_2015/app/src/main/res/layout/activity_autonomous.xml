@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+
+    <TextView android:id="@+id/tvWelcome" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_toLeftOf="@+id/etName"
+        android:text="Welcome" android:textSize="30dp" />
+
+    <EditText android:id="@+id/etName" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView android:id="@+id/tvYoure" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_toRightOf="@+id/etName"
+        android:text=",you're" android:textSize="30dp" />
+
+    <Spinner android:id="@+id/sRobot" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/tvYoure"
+        android:layout_toRightOf="@+id/tvYoure" android:textSize="30dp" />
+
+    <TextView android:id="@+id/tvTeam" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvWelcome"
+        android:layout_below="@+id/tvWelcome" android:layout_marginTop="20dp" android:text="Team" />
+
+    <Spinner android:id="@+id/sTeam" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/tvTeam"
+        android:layout_toRightOf="@+id/tvTeam" />
+
+    <TextView android:id="@+id/tvMatch" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/tvTeam"
+        android:layout_marginTop="10dp" android:layout_toLeftOf="@+id/etMatch"
+        android:text="Match" />
+
+    <EditText android:id="@+id/etMatch" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/tvMatch"
+        android:layout_alignParentRight="true" android:layout_marginRight="300dp"
+        android:inputType="number" />"
+
+    <CheckBox android:id="@+id/cbRobSet" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTeam" android:text="Drove to auto zone" />
+
+    <CheckBox android:id="@+id/cbStackedTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbRobSet" android:text="Stacked all totes" />
+
+    <Button android:id="@+id/bTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbStackedTote" android:layout_marginTop="10dp"
+        android:text="Yellow Tote to\nauto zone 0" />
+
+    <Button android:id="@+id/bUndoTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/bTote"
+        android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/bTote"
+        android:text="Undo" />
+
+    <Button android:id="@+id/bContainer" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bTote" android:layout_marginTop="10dp"
+        android:text="Container to\nauto zone 0" />
+
+    <Button android:id="@+id/bUndoContainer" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/bContainer"
+        android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/bContainer"
+        android:text="Undo" />
+
+    <Button android:id="@+id/bStepCont" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bContainer" android:layout_marginTop="10dp"
+        android:text="Container\nfrom step 0" />
+
+    <Button android:id="@+id/bUndoStepCont" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/bStepCont"
+        android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/bStepCont"
+        android:text="Undo" />
+
+    <Button android:id="@+id/bKnockCont" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bStepCont" android:layout_marginTop="10dp"
+        android:text="Knocked over\nContainer 0" />
+
+    <Button android:id="@+id/bUndoKnockCont" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/bKnockCont"
+        android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/bKnockCont"
+        android:text="Undo" />
+
+    <Button android:id="@+id/bNext" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" android:layout_marginTop="10dp"
+        android:text="Go to Teleop" />
+
+    <ImageView android:id="@+id/ivField" android:layout_width="500dp" android:layout_height="500dp"
+        android:layout_alignParentRight="true" android:layout_alignTop="@+id/cbRobSet"
+        android:layout_marginTop="20dp" android:adjustViewBounds="true"
+        android:src="@drawable/field" />
+
+    <RadioButton android:id="@+id/rbLeftTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignLeft="@+id/ivField"
+        android:layout_alignTop="@+id/ivField" android:layout_marginLeft="125dp"
+        android:layout_marginTop="100dp" />
+
+    <RadioButton android:id="@+id/rbMidTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/rbLeftTote"
+        android:layout_marginLeft="75dp" android:layout_toRightOf="@+id/rbLeftTote" />
+
+    <RadioButton android:id="@+id/rbRightTote" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/rbLeftTote"
+        android:layout_marginLeft="75dp" android:layout_toRightOf="@+id/rbMidTote" />
+
+    <RadioButton android:id="@+id/rbLandfill" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignRight="@+id/rbLeftTote"
+        android:layout_below="@+id/rbLeftTote" android:layout_marginTop="175dp" />
+
+    <RadioButton android:id="@+id/rbNoShow" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignRight="@+id/rbMidTote"
+        android:layout_below="@+id/ivField" android:text="No show" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:7:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:8:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+application
+ADDED from AndroidManifest.xml:14:5
+	android:label
+		ADDED from AndroidManifest.xml:17:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:15:9
+	android:icon
+		ADDED from AndroidManifest.xml:16:9
+	android:theme
+		ADDED from AndroidManifest.xml:18:9
+activity#com.example.stand_scout_2015.SignIn
+ADDED from AndroidManifest.xml:19:9
+	android:label
+		ADDED from AndroidManifest.xml:21:13
+	android:name
+		ADDED from AndroidManifest.xml:20:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:22:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:23:17
+	android:name
+		ADDED from AndroidManifest.xml:23:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:25:17
+	android:name
+		ADDED from AndroidManifest.xml:25:27
+activity#com.example.stand_scout_2015.Autonomous
+ADDED from AndroidManifest.xml:29:9
+	android:label
+		ADDED from AndroidManifest.xml:31:13
+	android:name
+		ADDED from AndroidManifest.xml:30:13
+intent-filter#android.intent.action.AUTONOMOUS+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:32:13
+action#android.intent.action.AUTONOMOUS
+ADDED from AndroidManifest.xml:33:17
+	android:name
+		ADDED from AndroidManifest.xml:33:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:35:17
+	android:name
+		ADDED from AndroidManifest.xml:35:27
+activity#com.example.stand_scout_2015.Teleop
+ADDED from AndroidManifest.xml:39:9
+	android:label
+		ADDED from AndroidManifest.xml:41:13
+	android:name
+		ADDED from AndroidManifest.xml:40:13
+intent-filter#android.intent.action.TELEOP+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:42:13
+action#android.intent.action.TELEOP
+ADDED from AndroidManifest.xml:43:17
+	android:name
+		ADDED from AndroidManifest.xml:43:25
+activity#com.example.stand_scout_2015.Comments
+ADDED from AndroidManifest.xml:49:9
+	android:label
+		ADDED from AndroidManifest.xml:51:13
+	android:name
+		ADDED from AndroidManifest.xml:50:13
+intent-filter#android.intent.action.COMMENTS+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:52:13
+action#android.intent.action.COMMENTS
+ADDED from AndroidManifest.xml:53:17
+	android:name
+		ADDED from AndroidManifest.xml:53:25
+activity#com.example.stand_scout_2015.Final_Screen
+ADDED from AndroidManifest.xml:59:9
+	android:label
+		ADDED from AndroidManifest.xml:61:13
+	android:name
+		ADDED from AndroidManifest.xml:60:13
+intent-filter#android.intent.action.FINAL_SCREEN+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:62:13
+action#android.intent.action.FINAL_SCREEN
+ADDED from AndroidManifest.xml:63:17
+	android:name
+		ADDED from AndroidManifest.xml:63:25

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".SignIn">
+
+    <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:text="Sign In" android:textSize="30dp" />
+
+    <EditText android:id="@+id/etName" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle" android:layout_marginTop="60dp" android:ems="10"
+        android:hint="Scout Name">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner android:id="@+id/sRobot" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/etName"
+        android:layout_toRightOf="@+id/etName" android:textSize="20dp" />
+
+    <Button android:id="@+id/bNext" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignBottom="@+id/etName"
+        android:layout_alignParentRight="true" android:text="Go to Auto" />
+
+</RelativeLayout>
