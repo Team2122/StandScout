@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StandScout.iml" filepath="$PROJECT_DIR$/StandScout.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stand_Scout_2015.iml" filepath="$PROJECT_DIR$/Stand_Scout_2015.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

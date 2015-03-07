@@ -90,35 +90,35 @@
         android:layout_alignParentRight="true" android:layout_marginTop="10dp"
         android:text="Go to Teleop" />
 
-    <ImageView android:id="@+id/ivField" android:layout_width="375dp" android:layout_height="425dp"
+    <ImageView android:id="@+id/ivField" android:layout_width="500dp" android:layout_height="500dp"
         android:layout_alignParentRight="true" android:layout_alignTop="@+id/cbRobSet"
         android:layout_marginTop="20dp" android:adjustViewBounds="true"
         android:src="@drawable/field" />
 
     <RadioButton android:id="@+id/rbLeftTote" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignLeft="@+id/ivField"
-        android:layout_alignTop="@+id/ivField" android:layout_marginLeft="90dp"
-        android:layout_marginTop="80dp" />
+        android:layout_alignTop="@+id/ivField" android:layout_marginLeft="125dp"
+        android:layout_marginTop="100dp" />
 
     <RadioButton android:id="@+id/rbMidTote" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignBottom="@+id/rbLeftTote"
-        android:layout_marginLeft="55dp" android:layout_toRightOf="@+id/rbLeftTote" />
+        android:layout_marginLeft="75dp" android:layout_toRightOf="@+id/rbLeftTote" />
 
     <RadioButton android:id="@+id/rbRightTote" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignBottom="@+id/rbLeftTote"
-        android:layout_marginLeft="55dp" android:layout_toRightOf="@+id/rbMidTote" />
+        android:layout_marginLeft="75dp" android:layout_toRightOf="@+id/rbMidTote" />
 
     <RadioButton android:id="@+id/rbLandfill" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignRight="@+id/rbLeftTote"
-        android:layout_below="@+id/rbLeftTote" android:layout_marginTop="150dp" />
+        android:layout_below="@+id/rbLeftTote" android:layout_marginTop="175dp" />
 
     <RadioButton android:id="@+id/rbMidLandfill" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_toRightOf="@+id/rbLandfill"
-        android:layout_marginLeft="60dp" android:layout_alignBottom="@+id/rbLandfill" />
+        android:layout_marginLeft="85dp" android:layout_alignBottom="@+id/rbLandfill" />
 
     <RadioButton android:id="@+id/rbRightLandfill" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_toRightOf="@+id/rbMidLandfill"
-        android:layout_marginLeft="60dp" android:layout_alignBottom="@+id/rbLandfill" />
+        android:layout_marginLeft="85dp" android:layout_alignBottom="@+id/rbLandfill" />
 
     <RadioButton android:id="@+id/rbNoShow" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_alignRight="@+id/rbMidTote"

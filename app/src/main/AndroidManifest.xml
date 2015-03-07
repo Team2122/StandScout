@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.teamtators.standscout"
+    package="com.example.stand_scout_2015"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -15,9 +15,9 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="org.teamtators.standscout.SignIn"
+            android:name="com.example.stand_scout_2015.SignIn"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
         </activity>
         
         <activity
-            android:name="org.teamtators.standscout.Autonomous"
+            android:name="com.example.stand_scout_2015.Autonomous"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.AUTONOMOUS" />
@@ -37,7 +37,7 @@
         </activity>
         
         <activity
-            android:name="org.teamtators.standscout.Teleop"
+            android:name="com.example.stand_scout_2015.Teleop"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.TELEOP" />
@@ -45,6 +45,27 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.example.stand_scout_2015.Comments"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.COMMENTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.stand_scout_2015.Final_Screen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FINAL_SCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,2 +1,0 @@
-C:\Users\Daryl\AndroidstudioProjects\Stand_Scout_2015\app\build\intermediates\classes\debug
-C:\Users\Daryl\AndroidstudioProjects\Stand_Scout_2015\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-656ec30debd7690579769de2be7b8fec62f7f875.jar

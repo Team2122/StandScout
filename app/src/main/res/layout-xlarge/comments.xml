@@ -1,0 +1,353 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CommentScreen">
+
+    <TextView
+        android:text="Autonomous Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvauto"
+        android:textSize="30dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox1"
+        android:layout_below="@+id/tvauto"
+        android:layout_marginTop="10dp"
+        android:text="Did nothing in auto."/>
+    <TextView
+        android:text="Teleop Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTeleComs"
+        android:layout_below="@+id/checkbox1"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"/>
+    <TextView
+        android:text="Reliabilty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reliability"
+        android:layout_below="@+id/tvTeleComs"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:text="Died"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox2"
+        android:layout_below="@+id/reliability"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Intermittent Operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox3"
+        android:layout_below="@+id/checkbox2"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Worked Continuously"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox4"
+        android:layout_below="@+id/checkbox3"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Tipped Over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox5"
+        android:layout_below="@+id/checkbox4"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Almost Tipped Over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox6"
+        android:layout_below="@+id/checkbox5"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="Got stuck on litter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox6"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox21" />
+
+    <TextView
+        android:text="Rate the Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver"
+        android:layout_below="@+id/checkbox21"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_driver"
+        android:layout_below="@+id/driver"
+        android:layout_marginTop="10dp"
+        android:max="10"
+        android:progress="1"/>
+
+    <TextView
+        android:text="Defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/defense"
+        android:layout_below="@+id/rate_driver"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:text="Removed Center Containers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox7"
+        android:layout_below="@+id/defense"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Bulldozed litter into landfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox8"
+        android:layout_below="@+id/checkbox7"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:text="Tote Handling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tote_handling"
+        android:layout_below="@+id/checkbox8"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:text="Can't pick up a tote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox9"
+        android:layout_below="@+id/tote_handling"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="Picks up totes from floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox10"
+        android:layout_below="@+id/checkbox9"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="Gets totes from chute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox11"
+        android:layout_below="@+id/tvToteCont"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Knocked over a stack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox12"
+        android:layout_below="@+id/checkbox11"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:text="Rate litter bulldozing abilities:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_noodler"
+        android:layout_below="@+id/checkbox12"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_noodling"
+        android:layout_below="@+id/rate_noodler"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="1"/>
+    <CheckBox
+        android:text="Can't pick up a container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox13"
+        android:layout_below="@+id/rate_noodling"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Stacks from front of robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox14"
+        android:layout_below="@+id/checkbox13"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Stacks from back of robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox15"
+        android:layout_below="@+id/checkbox14"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Stacks from side of robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox16"
+        android:layout_below="@+id/checkbox15"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:text="Able to drive over platforms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox17"
+        android:layout_below="@+id/checkbox16"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvToteCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvauto"
+        android:layout_marginLeft="20dp"
+        android:text="Tote Handling Continued"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:text="straddles platform to score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox18"
+        android:layout_below="@+id/checkbox17"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="Tether bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox22"
+        android:layout_below="@+id/checkbox18"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/tvCapHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox22"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:layout_marginTop="10dp"
+        android:text="Max Cap Height"/>
+
+    <Spinner
+        android:id="@+id/sCapHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCapHeight"
+        android:layout_below="@+id/tvCapHeight"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvRateCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCapHeight"
+        android:layout_toRightOf="@+id/tvCapHeight"
+        android:layout_marginLeft="20dp"
+        android:text="Rate Capping Ability" />
+
+    <SeekBar
+        android:id="@+id/sbRateCap"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRateCap"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/tvRateCap"
+        android:max="10"
+        android:progress="1"/>
+
+    <TextView
+        android:text="Rate speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_speed"
+        android:layout_toRightOf="@+id/tvauto"
+        android:layout_below="@+id/sCapHeight"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/tvToteCont"
+        android:textSize="20dp"/>
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate_speed_seekbar"
+        android:layout_below="@+id/rate_speed"
+        android:layout_alignLeft="@+id/rate_speed"
+        android:layout_marginTop="5dp"
+        android:max="10"
+        android:progress="1"/>
+
+    <CheckBox
+        android:text="Box on Wheels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox19"
+        android:layout_below="@+id/rate_speed_seekbar"
+        android:layout_alignLeft="@+id/rate_speed_seekbar"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:text="Avoid choosing. EXPLAIN:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox20"
+        android:layout_below="@+id/checkbox19"
+        android:layout_alignLeft="@+id/checkbox19"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/reason"
+        android:layout_below="@+id/checkbox20"
+        android:layout_alignLeft="@+id/checkbox20"
+        android:layout_marginTop="10dp"
+        android:hint="comments"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/etWeakness"
+        android:layout_below="@+id/reason"
+        android:layout_alignLeft="@+id/reason"
+        android:layout_marginTop="10dp"
+        android:hint="weakness"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/forward_button"
+        android:id="@+id/back_button"
+        android:text="Back"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/forward_button"
+        android:text="Forwards"
+        />
+
+</RelativeLayout>
