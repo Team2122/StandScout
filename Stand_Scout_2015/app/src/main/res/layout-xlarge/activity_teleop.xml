@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/etName"
+        android:text="Welcome"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvYoure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/etName"
+        android:text=",you're"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/sRobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvYoure"
+        android:layout_toRightOf="@+id/tvYoure"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvWelcome"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_marginTop="20dp"
+        android:text="Team" />
+
+    <Spinner
+        android:id="@+id/sTeam"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTeam"
+        android:layout_toRightOf="@+id/tvTeam" />
+
+    <TextView
+        android:id="@+id/tvMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTeam"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/etMatch"
+        android:text="Match" />
+
+    <EditText
+        android:id="@+id/etMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvMatch"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="300dp" />
+
+    <TextView
+        android:id="@+id/tvTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="Stacked a tote"
+        android:textSize="20dp" />"
+
+    <Button
+        android:id="@+id/b6HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTote"
+        android:layout_marginTop="10dp"
+        android:text="6 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo6HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b6HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b6HighTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b5HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b6HighTote"
+        android:layout_marginTop="10dp"
+        android:text="5 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo5HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b5HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b5HighTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b4HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b5HighTote"
+        android:layout_marginTop="10dp"
+        android:text="4 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo4HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b4HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b4HighTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b3HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b4HighTote"
+        android:layout_marginTop="10dp"
+        android:text="3 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo3HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b3HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b3HighTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b2HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b3HighTote"
+        android:layout_marginTop="10dp"
+        android:text="2 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo2HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b2HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b2HighTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b1HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b2HighTote"
+        android:layout_marginTop="10dp"
+        android:text="1 high\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo1HighTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b1HighTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b1HighTote"
+        android:text="Undo" />
+
+    <TextView
+        android:id="@+id/tvContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b1HighTote"
+        android:layout_marginTop="20dp"
+        android:text="Placed a container"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/b6HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvContainer"
+        android:layout_marginTop="10dp"
+        android:text="Level 6\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo6HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b6HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b6HighCont"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b5HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b6HighCont"
+        android:layout_marginTop="10dp"
+        android:text="Level 5\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo5HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b5HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b5HighCont"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b4HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b5HighCont"
+        android:layout_marginTop="10dp"
+        android:text="Level 4\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo4HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b4HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b4HighCont"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b3HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b4HighCont"
+        android:layout_marginTop="10dp"
+        android:text="Level 3\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo3HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b3HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b3HighCont"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b2HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b3HighCont"
+        android:layout_marginTop="10dp"
+        android:text="Level 2\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo2HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b2HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b2HighCont"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b1HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/b2HighCont"
+        android:layout_marginTop="10dp"
+        android:text="Level 1\n0"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/bUndo1HighCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b1HighCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b1HighCont"
+        android:text="Undo" />
+
+    <TextView
+        android:id="@+id/tvCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMatch"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/tvTote"
+        android:text="Coopertition Stack"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/b4HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoopTote"
+        android:layout_below="@+id/tvCoopTote"
+        android:layout_marginTop="10dp"
+        android:text="4 high\n0" />
+
+    <Button
+        android:id="@+id/bUndo4HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b4HighCoopTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b4HighCoopTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b3HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoopTote"
+        android:layout_below="@+id/b4HighCoopTote"
+        android:layout_marginTop="10dp"
+        android:text="3 high\n0" />
+
+    <Button
+        android:id="@+id/bUndo3HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b3HighCoopTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b3HighCoopTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b2HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoopTote"
+        android:layout_below="@+id/b3HighCoopTote"
+        android:layout_marginTop="10dp"
+        android:text="2 high\n0" />
+
+    <Button
+        android:id="@+id/bUndo2HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b2HighCoopTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b2HighCoopTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/b1HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCoopTote"
+        android:layout_below="@+id/b2HighCoopTote"
+        android:layout_marginTop="10dp"
+        android:text="1 high\n0" />
+
+    <Button
+        android:id="@+id/bUndo1HighCoopTote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b1HighCoopTote"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/b1HighCoopTote"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/bLitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1HighCoopTote"
+        android:layout_below="@+id/b1HighCoopTote"
+        android:layout_marginTop="30dp"
+        android:text="Litter to\nLandfill 0" />
+
+    <Button
+        android:id="@+id/bUndoLitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bLitter"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/bLitter"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/bRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1HighCoopTote"
+        android:layout_below="@+id/bLitter"
+        android:layout_marginTop="30dp"
+        android:text="Litter in\nContainer 0" />
+
+    <Button
+        android:id="@+id/bUndoRecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bRecycle"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/bRecycle"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/bKnockStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1HighCoopTote"
+        android:layout_below="@+id/bRecycle"
+        android:layout_marginTop="30dp"
+        android:text="Knocked Over\nStack 0" />
+
+    <Button
+        android:id="@+id/bUndoKnockStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bKnockStack"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/bKnockStack"
+        android:text="Undo" />
+
+    <Button
+        android:id="@+id/bKnockCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1HighCoopTote"
+        android:layout_below="@+id/bKnockStack"
+        android:layout_marginTop="30dp"
+        android:text="Knocked Over\nContainer 0" />
+
+    <Button
+        android:id="@+id/bUndoKnockCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bKnockCont"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/bKnockCont"
+        android:text="Undo" />
+
+    <ImageView
+        android:id="@+id/ivField"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etMatch"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/field"/>
+
+    <ToggleButton
+        android:id="@+id/tbLeftStageCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_alignTop="@+id/ivField"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="67dp"
+        android:alpha="0.5"
+        android:textColor="#ffff00"/>
+
+    <ToggleButton
+        android:id="@+id/tbMidStageCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tbLeftStageCont"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tbLeftStageCont"
+        android:alpha="0.5"
+        android:textColor="#ffff00" />
+
+    <ToggleButton
+        android:id="@+id/tbRightStageCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tbLeftStageCont"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/tbMidStageCont"
+        android:alpha="0.5"
+        android:textColor="#ffff00" />
+
+    <ToggleButton
+        android:id="@+id/tbLeftStepCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/ivField"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="65dp"
+        android:alpha="0.5"
+        android:textColor="#ffff00" />
+
+
+    <ToggleButton
+        android:id="@+id/tbMidLeftStepCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tbLeftStepCont"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/tbLeftStepCont"
+        android:alpha="0.5"
+        android:textColor="#ffff00" />
+
+    <ToggleButton
+        android:id="@+id/tbMidRightStepCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tbLeftStepCont"
+        android:layout_marginLeft="63dp"
+        android:layout_toRightOf="@+id/tbMidLeftStepCont"
+        android:alpha="0.5"
+        android:textColor="#ffff00"/>
+
+    <ToggleButton
+        android:id="@+id/tbRightStepCont"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/tbLeftStepCont"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/tbMidRightStepCont"
+        android:alpha="0.5"
+        android:textColor="#ffff00"/>
+
+    <CheckBox
+        android:id="@+id/cbLeftFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_alignTop="@+id/ivField"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp" />
+
+    <CheckBox
+        android:id="@+id/cbRightFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cbLeftFeed"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@+id/cbLeftFeed" />
+
+    <CheckBox
+        android:id="@+id/cbLeftLandfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbLeftFeed"
+        android:layout_below="@+id/cbLeftFeed"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="230dp" />
+
+    <CheckBox
+        android:id="@+id/cbRightLandfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cbLeftLandfill"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/cbLeftLandfill" />
+
+    <RadioButton
+        android:id="@+id/rbLeftTopStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_alignTop="@+id/ivField"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="130dp" />
+
+    <RadioButton
+        android:id="@+id/rbMidTopStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbLeftTopStack"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/rbLeftTopStack" />
+
+    <RadioButton
+        android:id="@+id/rbRightTopStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbLeftTopStack"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/rbMidTopStack" />
+
+    <RadioButton
+        android:id="@+id/rbLeftBottomStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_alignTop="@+id/ivField"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="245dp" />
+
+    <RadioButton
+        android:id="@+id/rbMidBottomStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbLeftBottomStack"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/rbLeftBottomStack" />
+
+    <RadioButton
+        android:id="@+id/rbRightBottomStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rbLeftBottomStack"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/rbMidBottomStack" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_below="@+id/ivField"
+        android:text="Press recycling containers that they used" />
+
+    <CheckBox
+        android:id="@+id/cbInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_below="@+id/tvInfo"
+        android:clickable="false"
+        android:text="=where they got totes" />
+
+    <RadioButton
+        android:id="@+id/rbInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivField"
+        android:layout_below="@+id/cbInfo"
+        android:clickable="false"
+        android:text="=where they stacked totes" />
+
+    <Button
+        android:id="@+id/bNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/bNext"
+        android:text="Back" />
+
+</RelativeLayout>
